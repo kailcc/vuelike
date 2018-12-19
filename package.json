@@ -1,0 +1,29 @@
+{
+  "name": "vuelike",
+  "version": "1.0.0",
+  "description": "vuelike",
+  "main": "dist/vuelike.cjs.js",
+  "module": "dist/vuelike.esm.js",
+  "browser": "dist/vuelike.umd.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "rollup -c && npm publish --registry http://npm.yupaopao.com"
+  },
+  "devDependencies": {
+    "rollup": "^0.68.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-serve": "^0.6.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.2"
+  }
+}
