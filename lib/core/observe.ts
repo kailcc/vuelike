@@ -3,6 +3,7 @@ class Observer {
   proxy: any
 
   constructor(data) {
+    debugger
     this.data = data
     this.walk(data)
   }
@@ -55,7 +56,7 @@ export function observe(value, vm?) {
 
 let uid = 0
 
-class Dep {
+export class Dep {
   id: number
   subs: Array<any>
 
